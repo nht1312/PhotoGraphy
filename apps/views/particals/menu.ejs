@@ -1,0 +1,35 @@
+<div class="bar">
+    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+    </button>
+  </div>  
+    <div class="navmenu navmenu-default navmenu-fixed-left">
+      
+     <ul id="navbar" class="nav navmenu-nav">
+        <li><a href="home">Home</a></li>
+        <li><a href="work">Works</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="blog">Blog</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+      <a class="navmenu-brand" href="#"><img src="../public/photography-master/img/logo.png" width="160"></a>
+      <div class="social">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-skype"></i></a>
+      </div>
+      <div class="copyright-text">©Copyright <a href="https://github.com/nht1312"> itnhtu</a> 2023 </div>
+    </div>
+    <script>
+        const navbar = document.getElementById("navbar");
+        const lis = navbar.querySelectorAll("li");
+        for (let i = 0; i < lis.length; i++) {
+            if (lis[i].children[0].href == window.location.href)
+            lis[i].classList.add("active");
+        }
+    </script>
